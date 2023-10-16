@@ -1,0 +1,360 @@
+    /* Header with logo */
+    
+    .inner_c {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .header {
+        height: 68px;
+        width: 100%;
+        border-bottom: 2px solid #e2e2e2;
+        /* background-color: gray; */
+        /* box shadow */
+        box-shadow: 4px 0px 3px 4px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+    
+    .header .header_c {
+        /* background-color: pink; */
+        height: 68px;
+        line-height: 68px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .header .header_c .logo {
+        width: 160px;
+        height: 68px;
+        line-height: 68px;
+        padding: 0 15px;
+        float: left;
+        /* background-color: orange; */
+    }
+    /* For SEO, replace the shop name with the logo */
+    
+    .header .header_c .logo a {
+        display: block;
+        text-indent: -100em;
+        overflow: hidden;
+        background-image: url("../images/logo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .header .header_c .category {
+        width: 168px;
+        /* background-color: aquamarine; */
+        float: left;
+        text-align: center;
+    }
+    
+    .header .header_c .category a {
+        display: block;
+    }
+    /* /* .header .header_c .navi {
+    float: left;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #333;
+}
+
+.header .navi .category .button {
+    width: 168px;
+    text-align: center;
+    background-color: aquamarine;
+    float: left;
+}
+
+.header .navi .category .button a {
+    text-decoration: none;
+    color: #333;
+    display: table-cell;
+} */
+    
+    .header .header_c .category a span {
+        display: inline-block;
+        border: 6px solid transparent;
+        border-top: 6px solid #333;
+        position: relative;
+        left: 4px;
+        top: 4px;
+    }
+    
+    .header .header_c .category:hover span {
+        border-top-color: transparent;
+        border-bottom-color: #333;
+        top: -3px;
+    }
+    
+    .header .header_c .category:hover {
+        background-color: rgba(214, 173, 98, 0.659);
+    }
+    
+    .header .header_c .category .products {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        display: none;
+    }
+    
+    .header .header_c .category:hover .products {
+        display: block;
+    }
+    
+    .header .header_c .category .products .inner_menu {
+        width: 168px;
+        list-style: none;
+        padding: 40px 0px;
+        float: left;
+    }
+    
+    .header .header_c .category .products .inner_menu a:hover {
+        color: rgba(214, 173, 98, 0.659);
+    }
+    
+    .header .header_c .category .products .classitems {
+        float: left;
+        width: 744px;
+        height: 340px;
+        padding-top: 20px;
+        /* background-color: aliceblue; */
+    }
+    
+    .header .header_c .category .products .classitems .display_item {
+        width: 248px;
+        height: 340px;
+        /* background-color: bisque; */
+        float: left;
+        position: relative;
+    }
+    
+    .header .header_c .category .products .classitems .display_item p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+    
+    .header .header_c .category .products .classitems .display_item .highlight {
+        color: red;
+    }
+    
+    .header .header_c .category .products .classitems .display_item .top {
+        position: relative;
+    }
+    
+    .display_item img {
+        width: 80%;
+    }
+    
+    .header .header_c .category .products .classitems .display_item .button {
+        width: 150px;
+        height: 50px;
+        background-color: rgba(214, 173, 98, 0.659);
+        position: absolute;
+        left: 49px;
+        top: 50%;
+        line-height: 50px;
+        display: none;
+    }
+    
+    .header .header_c .category .products .classitems .display_item:hover .button {
+        display: block;
+    }
+    
+    .mask {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .header .header_c .category .products .classitems .display_item:hover .mask {
+        display: block;
+    }
+    /* .header .navi .category:hover .product {
+    display: block;
+}
+
+.header .navi .category .product {
+    width: 100%;
+    background-color: gray;
+    position: absolute;
+    display: none;
+}
+
+.header .navi .category .product ul li {
+    list-style: none;
+    text-align: left;
+} */
+    /* Head Nav  */
+    
+    .header .header_c .nav {
+        float: left;
+    }
+    
+    .header .header_c .nav li {
+        float: left;
+        padding: 0px 25px;
+    }
+    
+    .header .header_c .nav li a {
+        display: block;
+    }
+    
+    .header .header_c .nav li:hover {
+        background-color: rgba(214, 173, 98, 0.659);
+    }
+    /* Search icon */
+    
+    .header .header_c .search {
+        float: left;
+        width: 160px;
+        height: 68px;
+        /* background-color: antiquewhite; */
+        /* background-image: url(../images/img00.png);
+    background-repeat: no-repeat;
+    background-position: left; */
+    }
+    
+    .header .header_c .search .search_box {
+        height: 20px;
+    }
+    
+    .header .header_c .search img {
+        widows: 20px;
+        height: 20px;
+    }
+    
+    .header .header_c .search input {
+        border: none;
+        width: 100px;
+        border-bottom: 1px solid;
+        display: none;
+    }
+    
+    .header .header_c .search:hover input {
+        display: inline-block;
+    }
+    /* .header .header_c .login img {
+    display: inline-block;
+    width: 22px;
+    margin-bottom: -4px;
+} */
+    
+    .header .header_c .login {
+        float: right;
+    }
+    
+    .header .header_c .login span {
+        padding: 0 10px;
+    }
+    /* Cart */
+    
+    .header .header_c .login .cart {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #333;
+        background-image: url(../images/0.png);
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    .header .header_c .login .cart:hover .cart_display {
+        display: block;
+    }
+    
+    .header .header_c .login .cart .cart_display {
+        position: absolute;
+        width: 160px;
+        height: 144px;
+        background-color: #ededed;
+        top: 69px;
+        padding: 10px;
+        text-align: center;
+        display: none;
+    }
+    
+    .header .header_c .login .cart .cart_display .cart_checkout {
+        line-height: 44px;
+        font-size: 18px;
+        background-color: #c78a49;
+    }
+    
+    .header .header_c .login .cart .cart_display .items p span {
+        color: red;
+    }
+    
+    .header .header_c .login .cart .cart_display .items p {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 100px;
+    }
+    /* ----------------Head End--------------------- */
+    /* ----------------Banner Start -------------------*/
+    
+    .banner {
+        height: 600px;
+        width: 100%;
+        /* background-color: #c78a49; */
+        position: relative;
+        padding-top: 3px;
+        text-align: center;
+    }
+    
+    .banner ul li {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .banner ul li a img {
+        object-fit: cover;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .banner .btn {
+        position: absolute;
+        height: 10px;
+        width: 90px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -45px;
+        /* background-color: aqua; */
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+    
+    .banner .btn ol {
+        list-style: none;
+    }
+    
+    .banner .btn ol li {
+        height: 5px;
+        width: 20px;
+        float: left;
+        background-color: white;
+        margin: 5px;
+    }
+    
+    .banner .btn ol li.cur {
+        background-color: #c78a49;
+    }

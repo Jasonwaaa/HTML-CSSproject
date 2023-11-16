@@ -404,8 +404,12 @@
         height: 400px;
         overflow: hidden;
     }
-    .content img:hover{
-        transition: all 0.4 ease 0;
+    .content img {
+        transition: all 0.4s ease 0s;
+    }
+    .content .pic:hover img{
+        /* 记得加单位 */
+        transition: all 0.4s ease 0s;
         transform: scale(1.2);
     }
     .content .left{
@@ -422,9 +426,30 @@
         height: 400;
     }
     .content .right .top {
-        
+        height: 195px;
         overflow: hidden;
     }
     .content .right .bot{
         overflow: hidden;
+        height: 195px;
+        margin-top: 10px;
+    }
+    .content .pic{
+        position: relative;
+    }
+    .content .pic span {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        border: solid #fff 3px;
+        transition: all 0.4s ease 0s;
+    }
+    .content .pic:hover span{
+        right: 10px;
+        left: 10px;
+        bottom: 10px;
+        top: 10px;
+        transition: all 0.4s ease 0s;
     }

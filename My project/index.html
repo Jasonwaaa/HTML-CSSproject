@@ -103,10 +103,10 @@
     </div>
     <!--  -->
     <!-- banner -->
-    <div class="banner">
+    <div class="banner" id="banner_box">
         <ul>
             <li>
-                <a href="#" class="current"><img src="images/img11.png" alt=""></a>
+                <a href="#" class="current"><img src="images/img11.png" alt="" id="banner_image"></a>
             </li>
             <li>
                 <a href="#"><img src="images/img12.png" alt=""></a>
@@ -130,8 +130,100 @@
         </div>
     </div>
     <!-- benner end -->
-
-
+    <!-- New Products Start -->
+    <div class="new_pro">
+        <div class="common_title">
+            <h3>New Coming</h3>
+            <p>Everything is recommended</p>
+        </div>
+        <div class="pro_details">
+            <ul>
+                <li>
+                    <div class="display_item">
+                        <div class="top">
+                            <img src="images/img02.png" alt="">
+                            <div class="button">Details</div>
+                        </div>
+                        <div class="bottom">
+                            <p>Dish</p>
+                            <p class="highlight">$20</p>
+                        </div>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="display_item">
+                        <div class="top">
+                            <img src="images/img03.png" alt="">
+                            <div class="button">Details</div>
+                        </div>
+                        <div class="bottom">
+                            <p>Dish</p>
+                            <p class="highlight">$20</p>
+                        </div>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="display_item">
+                        <div class="top">
+                            <img src="images/img04.png" alt="">
+                            <div class="button">Details</div>
+                        </div>
+                        <div class="bottom">
+                            <p>Dish</p>
+                            <p class="highlight">$20</p>
+                        </div>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="display_item">
+                        <div class="top">
+                            <img src="images/img05.png" alt="">
+                            <div class="button">Details</div>
+                        </div>
+                        <div class="bottom">
+                            <p>Dish</p>
+                            <p class="highlight">$20</p>
+                        </div>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="btns">
+                <a href="#" class="left">&lt;</a>
+                <a href="#" class="right">&gt;</a>
+            </div>
+        </div>
+        
+    </div>
+    <!-- New Products End -->
+    <!-- Special -->
+    <div class="special_pro inner_c">
+        <div class="common_title">
+            <h3>Special</h3>
+            <p>Special for you</p>
+        </div>
+        <div class="content">
+            <div class="left">
+                <a href="#">
+                    <img src="images/img31.jpg" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <div class="top"><a href="#"><img src="images/img32.jpg" alt=""></a></div>
+                <div class="bot"><a href="#"><img src="images/img33.jpg" alt=""></a></div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+        window.onload = function(){
+        let image = document.getElementById("banner_image");
+        var banner = document.getElementById("banner_box");
+        banner.style.height = image.clientHeight+'px';
+        }
+</script>
 
 </html>

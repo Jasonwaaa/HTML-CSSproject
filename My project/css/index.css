@@ -127,24 +127,24 @@
         /* background-color: aliceblue; */
     }
     
-    .header .header_c .category .products .classitems .display_item {
+    .display_item {
         width: 248px;
-        height: 340px;
+        height: 280px;
         /* background-color: bisque; */
         float: left;
         position: relative;
     }
     
-    .header .header_c .category .products .classitems .display_item p {
+    .display_item p {
         line-height: 22px;
         font-size: 14px;
     }
     
-    .header .header_c .category .products .classitems .display_item .highlight {
+    .display_item .highlight {
         color: red;
     }
     
-    .header .header_c .category .products .classitems .display_item .top {
+    .display_item .top {
         position: relative;
     }
     
@@ -152,7 +152,7 @@
         width: 80%;
     }
     
-    .header .header_c .category .products .classitems .display_item .button {
+    .display_item .button {
         width: 150px;
         height: 50px;
         background-color: rgba(214, 173, 98, 0.659);
@@ -163,7 +163,7 @@
         display: none;
     }
     
-    .header .header_c .category .products .classitems .display_item:hover .button {
+    .display_item:hover .button {
         display: block;
     }
     
@@ -177,7 +177,7 @@
         left: 0;
     }
     
-    .header .header_c .category .products .classitems .display_item:hover .mask {
+    .display_item:hover .mask {
         display: block;
     }
     /* .header .navi .category:hover .product {
@@ -303,12 +303,13 @@
     /* ----------------Banner Start -------------------*/
     
     .banner {
-        height: 600px;
+        height: 380px;
         width: 100%;
         /* background-color: #c78a49; */
         position: relative;
         padding-top: 3px;
         text-align: center;
+        z-index: -1;
     }
     
     .banner ul li {
@@ -332,7 +333,7 @@
         position: absolute;
         height: 10px;
         width: 90px;
-        bottom: 0;
+        bottom: 20px;
         left: 50%;
         margin-left: -45px;
         /* background-color: aqua; */
@@ -351,10 +352,79 @@
         height: 5px;
         width: 20px;
         float: left;
-        background-color: white;
+        background-color: rgb(216, 121, 121);
         margin: 5px;
     }
     
     .banner .btn ol li.cur {
-        background-color: #c78a49;
+        background-color: #080707;
+    }
+    /* new products */
+    .common_title{
+        height: 100px;
+        /* padding-top: 35px; */
+        text-align: center;
+    }
+    .common_title h3{
+        line-height: 50px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .common_title p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .new_pro .pro_details {
+        height: 300px;
+        text-align: center;
+        width: 994px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .new_pro .pro_details ul li{
+        float: left;
+    }
+
+    .new_pro .pro_details a{
+        position: absolute;
+        font-size: 38px;
+        top: 20%;
+        color: #c3c3c3;
+    }
+
+    .new_pro .pro_details a.right{
+        right: -30px;
+    }
+    
+    .new_pro .pro_details a.left{
+        left: -30px;
+    }
+
+    .content {
+        height: 400px;
+        overflow: hidden;
+    }
+    .content img:hover{
+        transition: all 0.4 ease 0;
+        transform: scale(1.2);
+    }
+    .content .left{
+        width: 675px;
+        float: left;
+        overflow:hidden;
+        height: 400px;
+    }
+
+    .content .right{
+        width: 450px;
+        float: right;
+        overflow: hidden;
+        height: 400;
+    }
+    .content .right .top {
+        
+        overflow: hidden;
+    }
+    .content .right .bot{
+        overflow: hidden;
     }
